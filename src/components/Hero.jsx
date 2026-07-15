@@ -34,8 +34,8 @@ export default function Hero() {
         </svg>
       </div>
 
-      <div className="relative mx-auto grid w-full max-w-7xl gap-10 px-6 py-20 lg:grid-cols-12 lg:px-12 lg:py-32">
-        <div className="lg:col-span-9 lg:col-start-1">
+      <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center px-6 py-20 text-center lg:px-12 lg:py-32">
+        <div className="mx-auto max-w-3xl">
           <p className="fade-in-up mb-8 font-sans text-xs uppercase tracking-[0.4em] text-terracotta-light">
             Arquitetura &amp; Interiores — Anápolis, GO
           </p>
@@ -48,7 +48,7 @@ export default function Hero() {
             forma ao seu espaço
           </h1>
           <p
-            className="fade-in-up mt-8 max-w-xl font-sans text-base font-light leading-relaxed text-paper/70 sm:text-lg"
+            className="fade-in-up mx-auto mt-8 max-w-xl font-sans text-base font-light leading-relaxed text-paper/70 sm:text-lg"
             style={{ animationDelay: "0.25s" }}
           >
             Traduzimos personalidade, memória e afeto em projetos residenciais e de
@@ -56,7 +56,7 @@ export default function Hero() {
           </p>
 
           <div
-            className="fade-in-up mt-12 flex flex-col gap-4 sm:flex-row sm:items-center"
+            className="fade-in-up mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row"
             style={{ animationDelay: "0.4s" }}
           >
             <a

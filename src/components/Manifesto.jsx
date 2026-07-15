@@ -27,27 +27,6 @@ export default function Manifesto() {
             contemporâneos, acolhedores e atemporais — onde a forma nunca se
             distancia do sentimento.
           </p>
-
-          <div className="mt-12 grid grid-cols-2 gap-8 border-t border-ink/10 pt-10 sm:grid-cols-3">
-            <div>
-              <p className="font-serif text-3xl text-terracotta">+50</p>
-              <p className="mt-1 font-sans text-xs uppercase tracking-[0.15em] text-graphite/60">
-                Projetos entregues
-              </p>
-            </div>
-            <div>
-              <p className="font-serif text-3xl text-terracotta">100%</p>
-              <p className="mt-1 font-sans text-xs uppercase tracking-[0.15em] text-graphite/60">
-                Sob medida
-              </p>
-            </div>
-            <div>
-              <p className="font-serif text-3xl text-terracotta">GO</p>
-              <p className="mt-1 font-sans text-xs uppercase tracking-[0.15em] text-graphite/60">
-                Anápolis &amp; região
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
