@@ -1,16 +1,46 @@
-# React + Vite
+# Poesia Arquitetura — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page / portfólio institucional para o escritório de arquitetura e
+interiores **Poesia Arquitetura** (Anápolis/GO), substituindo o Linktree
+usado atualmente no Instagram.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** + **Vite**
+- **Tailwind CSS v4**
+- Fontes self-hosted via `@fontsource` (Playfair Display, Cormorant
+  Garamond, Inter) — sem dependência de Google Fonts em runtime
 
-## React Compiler
+## Seções da página
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Header** fixo — logo, navegação e CTA "Simular Projeto"
+2. **Hero** — headline conceitual, fundo atmosférico, CTAs (centralizado)
+3. **Manifesto** — texto sobre a filosofia do escritório
+4. **Serviços** — Projeto de Arquitetura, Projeto de Interiores e
+   Consultoria de Interiores (conteúdo baseado no material do cliente)
+5. **Showcase de Projetos** — grid de projetos com zoom suave no hover
+   (imagens placeholder em gradiente/line-art — trocar por fotos reais)
+6. **Briefing** — formulário multi-step (escopo → localização → contato)
+   que finaliza com um link direto para o WhatsApp do escritório
+7. **Footer** — endereço (London Eye Offices), Instagram, WhatsApp, email
+   e assinatura "Desenvolvido por Evodev Studio"
 
-## Expanding the Oxlint configuration
+## Rodando localmente
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm install
+npm run dev      # ambiente de desenvolvimento
+npm run build    # build de produção (saída em dist/)
+npm run lint     # checagem de lint (oxlint)
+```
+
+## Deploy
+
+Projeto configurado para deploy na Vercel a partir da branch `main`
+(preset Vite, build `npm run build`, output `dist`).
+
+## Pendências
+
+- Substituir os placeholders da galeria por fotografias reais dos
+  projetos do escritório.
+- Revisar/ajustar textos e números de contato conforme necessário.
